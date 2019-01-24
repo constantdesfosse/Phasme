@@ -1,0 +1,31 @@
+<% content_for :meta_title, "Phasme Music - Contact" %>
+<% content_for :meta_description, "Phasme is a French electronic music duo formed by Elliot Bluche and Jules Lemer." %>
+
+<div class="wrapper-home" style="padding-top:30px;flex-direction: column;">
+<%= image_tag 'Phasme.gif', :id => "logogif", class:'responsive' %>
+</div>
+
+<div class="contact" style="flex-direction: column">
+    <h1>Send us a message</h1>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <%= f.input :Name, :required => true %>
+      <%= f.input :eMail, :required => true %>
+      <%= f.input :Phone, :placeholder => '' %>
+      <%= f.input :Message, :as => :text, :required => true %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      </br>
+      <%= button_tag type: 'submit', class: "btn-contact-send", :style=> "color: white; border: 0px;" do %>
+      <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      <div style="font-size: 20px;padding:30px;">
+      <%= link_to root_path, class: "btn-send" do %>
+      <%= t ".", default: "Back Home"   %>
+    <% end %>
+    </div>
+  <% end %>
+      <% end %>
+    </div>
+  </div>
+

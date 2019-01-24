@@ -19,6 +19,7 @@ gem "simple_form"
 gem "autoprefixer-rails"
 gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 
 group :development, :test do

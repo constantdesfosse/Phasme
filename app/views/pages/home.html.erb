@@ -1,3 +1,6 @@
+<% content_for :meta_title, "Phasme Music" %>
+<% content_for :meta_description, "Phasme is a French electronic music duo formed by Elliot Bluche and Jules Lemer." %>
+
 <div class="wrapper-home" style="padding-top:0px;flex-direction: column; background-image: url(<% image_path '' %>); background-attachment: fixed;">
 
     <%= image_tag 'Phasme.gif', :id => "logogif", class:'responsive' %>
@@ -6,7 +9,7 @@
 </div> -->
 <section class="row" style="width:80%">
   <div class="span6">
-    <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/W8oNZ0aCN4I"" frameborder="0" allowfullscreen=""></iframe></div>
+    <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/aCNzNiecmxM?autoplay=1"" frameborder="0" allowfullscreen=""></iframe></div>
   </div>
 </section>
 
@@ -14,13 +17,15 @@
   <div class="Listen">LISTEN PHASME</div>
 </section>
 <div class="icon">
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/phasme/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/phasmemusic/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/channel/UCSGVj4Cep6X9dKGo3tlBCjA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+    <!-- <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a> -->
+    <a href="https://soundcloud.com/phasme_official" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+    <!-- <a href="https://www.facebook.com/pontbassegoulaine" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a> -->
+    <%= link_to new_contact_path, class: "fa fa-envelope" do %>
+      <%= t ".", default: ""   %>
+    <% end %>
 </div>
 
 <!--   <section>
