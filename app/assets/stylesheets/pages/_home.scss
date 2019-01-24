@@ -1,1 +1,87 @@
-// Specific CSS for your home-page
+.wrapper-home {
+  padding-top: 0px !important;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#logogif {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  max-width: 60%;
+  height: auto;
+
+}
+
+.responsive {
+  max-width: 70%;
+  height: auto;
+}
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Listen {
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+  border: 3px solid white;
+  width: 178px;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  font-size: 35px;
+  color: white !important;
+  & a {
+    margin-right: 15px;
+    transition: 1s;
+    & :hover {
+      color: #FF005E;
+      transition: 1s;
+    }
+  }
+}
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF005E;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}

@@ -18,6 +18,7 @@ gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
 gem 'jquery-rails'
+gem "font-awesome-rails"
 
 
 group :development, :test do
