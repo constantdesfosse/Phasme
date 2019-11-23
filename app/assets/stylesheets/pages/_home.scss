@@ -46,19 +46,29 @@ abbr[title="required"] {
   display: none;
 }
 
-.Listen {
+.listen {
   padding: 10px;
-  margin-top: 30px;
-  color: white;
-  border: 3px solid white;
-  width: 178px;
-  height: auto;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #FF005E;
+  color: white !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  transition: 0.5s;
+  & i {
+    font-size: 15px;
+    }
+}
+
+.listen:hover {
+    border-style: 1px solid;
+    border-color: #FFAB00;
+    color: #FF005E !important;
+    background-color: white;
+    transition: 0.5s;
 }
 
 .icon {
-  margin-bottom: 30px;
-  padding-top: 40px;
+  margin: -40px;
   font-size: 35px;
   color: white !important;
   & a {
@@ -90,3 +100,12 @@ a:hover {
 a:active {
   color: white;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
